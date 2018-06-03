@@ -1,7 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "LinkedList.h"
-
 
 // Builds and allocates a new LinkedList
 LinkedList newList()

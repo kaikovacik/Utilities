@@ -2,65 +2,56 @@
 #include <stdio.h>
 #include "LinkedList.h"
 
+
 int main(int argc, char const *argv[])
 {
-	LinkedList list1 = newList();
-	LinkedList list2 = newList();
+	LinkedList l1 = newList();
+	LinkedList l2 = newList();
+	LinkedList l3 = newList();
+	
 
-	push(&list1, 5);
-	push(&list1, 7);
+	printf("LIST1, LIST2, and LIST3\n");
+	print(&l1);
+	print(&l2);
+	print(&l3);
 
-	push(&list2, 12);
-	push(&list2, 46);
-	push(&list2, 11);
+	// push(&l1, 12);
+	// push(&l1, 12);
+	// push(&l1, 12);
+	// push(&l1, 12);
+	// push(&l1, 12);
 
-	// printf("list1:\n");
-	// print(&list1);
-	// printRev(&list1);
-	// printf("list2:\n");
-	// print(&list2);
-	// printRev(&list2);
-	// printf("\n");
+	// push(&l2, 4);
+	// push(&l2, 4);
+	// push(&l2, 4);
+	// push(&l2, 4);
+	// push(&l2, 4);
+	// push(&l2, 4);
 
-	append(&list1, 44);
-	append(&list1, 5);
-	append(&list1, 17);
-	insert(&list1, 0, 111);
+	// push(&l3, 6);
+	// push(&l3, 6);
+	// push(&l3, 6);
+	// push(&l3, 6);
+	// push(&l3, 6);
 
-	append(&list2, 4);
-	append(&list2, 9);
+	print(&l1);
+	print(&l2);
+	print(&l3);
 
-	printf("list1:\n");
-	print(&list1);
-	printRev(&list1);
-	printf("list2:\n");
-	print(&list2);
-	printRev(&list2);
-
-	// printf("list1:\n");
-	// print(&list1);
-	// printRev(&list1);
-	// printf("list2:\n");
-	// print(&list2);
-	// printRev(&list2);
-
-	// printf("\nSORTING:\n");
-
-	// sort(&list1);
-	// sort(&list2);
-
-	// printf("list1:\n");
-	// print(&list1);
-	// printRev(&list1);
-	// printf("list2:\n");
-	// print(&list2);
-	// printRev(&list2);
-
-	printf("%d\n", itemAt(&list1, 5));
-
-	printf("\nDELETING:\n");
-	deleteList(&list1);
-	deleteList(&list2);
-
+	deleteList(&l1);
+	deleteList(&l2);
+	deleteList(&l3);
 	return 0;
 }
+
+
+// void deleteList(LinkedList *list);
+// void push(LinkedList *list, int data);
+// void append(LinkedList *list, int data);
+// void insert(LinkedList *list, int index, int data);
+// int pop(LinkedList *list);
+// int peek(LinkedList *list);
+// void sort(LinkedList *list);
+// int itemAt(LinkedList *list, int index);
+// void print(LinkedList *list);
+// void printRev(LinkedList *list);
