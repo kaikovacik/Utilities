@@ -15,24 +15,24 @@ int main(int argc, char const *argv[])
 	print(&l2);
 	print(&l3);
 
-	// push(&l1, 12);
-	// push(&l1, 12);
-	// push(&l1, 12);
-	// push(&l1, 12);
-	// push(&l1, 12);
+	push(&l1, 12);
+	push(&l1, 12);
+	push(&l1, 12);
+	push(&l1, 12);
+	push(&l1, 12);
 
-	// push(&l2, 4);
-	// push(&l2, 4);
-	// push(&l2, 4);
-	// push(&l2, 4);
-	// push(&l2, 4);
-	// push(&l2, 4);
+	push(&l2, 4);
+	push(&l2, 4);
+	push(&l2, 4);
+	push(&l2, 4);
+	push(&l2, 4);
+	push(&l2, 4);
 
-	// push(&l3, 6);
-	// push(&l3, 6);
-	// push(&l3, 6);
-	// push(&l3, 6);
-	// push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
 
 	print(&l1);
 	print(&l2);

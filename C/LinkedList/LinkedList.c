@@ -27,15 +27,20 @@ void deleteList(LinkedList *list)
 	Node *curr = list->head;
 	Node *next;
 
-	// Free every node
-	while (curr != NULL)
+	// Check if already empty
+	if (list->size > 0)
 	{
-		next = curr->next;
-		free(curr);
-		curr = next;
-	}
+		// Free every node
+		while (curr != NULL)
+		{
+			next = curr->next;
+			free(curr);
+			curr = next;
+			printf("..\n");
+		}
 
-	list->size = 0;
+		list->size = 0;
+	}
 }
 
 
