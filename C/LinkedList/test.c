@@ -34,6 +34,12 @@ int main(int argc, char const *argv[])
 	push(&l3, 6);
 	push(&l3, 6);
 
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+	push(&l3, 6);
+
 	print(&l1);
 	print(&l2);
 	print(&l3);
