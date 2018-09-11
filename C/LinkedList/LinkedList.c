@@ -57,8 +57,10 @@ void push(LinkedList *list, int data)
 	if (list->size == 0)
 		list->tail = newNode;
 	else
+	{
 	 	newNode->next = list->head;
 	 	list->head->prev = newNode;
+	}
 
 	list->head = newNode;
 	list->size++;
